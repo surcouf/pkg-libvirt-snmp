@@ -1,0 +1,17 @@
+Source: libvirt-snmp
+Section: admin
+Priority: extra
+Maintainer: Raphaël 'SurcouF' Bordet <surcouf@debianfr.net>
+Build-Depends: debhelper (>= 8.0.0), pkg-config, libvirt-dev, libsnmp-dev
+Standards-Version: 3.9.2
+Homepage: http://wiki.libvirt.org/page/Libvirt-snmp
+Vcs-Git: git://libvirt.org/libvirt-snmp.git
+Vcs-Browser: http://libvirt.org/git/?p=libvirt-snmp.git;a=summary
+
+Package: libvirt-snmp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SNMP API for libvirt
+ Libvirt-snmp provides SNMP functionality for libvirt. Therefore it is now
+ possible to gather and set domain status over SNMP from one place. This
+ allows to create views of entire platforms end to end.
